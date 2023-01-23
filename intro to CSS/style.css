@@ -1,0 +1,12 @@
+/* typography => manipulate the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sacramento&display=swap');
+h1{
+    /* color: orangered; */
+    font-size: 90px;
+    font-family: 'Fredericka the Great', cursive;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-weight: bolder; */
+    text-decoration: none;
+    /* font-style: oblique; */
+}
+/* font-weight: lighter, normal, bold, bolder */
