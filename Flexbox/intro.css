@@ -1,0 +1,41 @@
+.flexbox{
+    width: 700px;
+    background-color: blueviolet;
+    border-radius: 16px;
+    margin: 70px auto;
+    height: 400px;
+    /* flex */
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+
+
+
+
+
+
+
+
+.card{
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.card1{
+    height: 150px;
+}
+.card2{
+    height: 180px;
+}
+.card3{
+    height: 110px;
+}
+.card4{
+    height: 50px;
+}
