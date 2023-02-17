@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 60px;
+}
+/* h1::first-letter{
+    color: blueviolet;
+    
+} */
+h1::first-line{
+    color: tomato;
+}
+h1::selection{
+    background-color: black;
+    color: white;
+}
+/* pseudo elements
+    1. first line
+    2. first letter
+    3. before
+    4. after
+    5. marker
+    6. selection
+*/
+p{
+    font-size: 40px;
+    text-align: center;
+}
+/* p::before{
+    content: 'Note: ';
+}
+p::after{
+    content: '!';
+} */
+.container{
+    width: 400px;
+    margin: 60px auto;
+}
+.card{
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    margin: 10px;
+}
+.card p{
+    font-size: 16px;
+}
+.bg1{
+    background-color: rgb(214, 255, 255);
+    color: teal;
+}
+.bg2{
+    background-color: rgb(255, 201, 193);
+    color: tomato;
+}
+.value::before{
+    content: '0';
+}
+/* pseudo classes */
+/* 
+    1. hover
+    2. focus
+    3. first child
+    4. last child
+    5. nth child
+*/
+
+.btn{
+    border: 2px solid black;
+    padding: 18px 44px;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* .btn:hover{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    padding: 18px 55px;
+} */
+input{
+    width: 100%;
+    border: 1px solid lightgray;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 12px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid dodgerblue
+    
+    ;
+}
+
+ul li{
+    font-size: 28px;
+}
+ ul li:first-child{
+    color: red;
+}
+ul li:last-child{
+    color: green;
+}
+ul li:nth-child(3){
+    color: blueviolet;
+} 
+
+/* ul li:nth-child(even){
+    color: blueviolet;
+} */
+
+li::marker{
+    color: green;
+}
