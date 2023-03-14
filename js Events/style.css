@@ -1,0 +1,74 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    width: 600px;
+    padding: 26px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 16px;
+}
+.alert{
+    width: 600px;
+    padding: 26px;
+    background-color: rgb(203, 255, 201);
+    color: rgb(0, 150, 0);
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 16px;
+}
+.container{
+    width: 400px;
+    margin: 50px auto;
+
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+}
+
+.magic{
+    animation-name: magic;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes magic{
+    20%{
+        color: orange;
+        font-size: 40px;
+    }
+    40%{
+        color: orangered;
+        font-size: 50px;
+    }
+    60%{
+        color: mediumvioletred;
+        font-size: 60px;
+    }
+    80%{
+        color: lawngreen;
+        font-size: 50px;
+    }
+    100%{
+        color: teal;
+        font-size: 40px;
+    }
+}
