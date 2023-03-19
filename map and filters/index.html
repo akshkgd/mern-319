@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <div class="card">
-        <h2>Add New User</h2>
-        <p>This is a simple js app to register new students. Enter the details and click register now to add the data!</p>
-        <div class="flex">
-            <input type="text" placeholder="Enter the name" id="name">
-            <input type="text" placeholder="Enter the email" id="email">  
+
+    <div class="container">
+        <div class="left-container">
+
+            <div class="add">
+                <h2>Add New User</h2>
+                <p>This is a simple js app to register new students. Enter the details and click register now to add the
+                    data!</p>
+
+                <input type="text" placeholder="Enter the name" id="name">
+                <input type="text" placeholder="Enter the email" id="email">
+
+
+                <button class="btn" onclick="register()">Register Now</button>
+
+                <div id="alert"></div>
+            </div>
 
         </div>
-        <button class="btn" onclick="register()">Register Now</button>
+        <div class="right-container">
+            <h2>All Students</h2>
+            <div class="students" id="users">
+                
+                
+            </div>
+        </div>
     </div>
 
 
     <!-- <script src="./users.js"></script> -->
     <script src="./app.js"></script>
 </body>
+
 </html>

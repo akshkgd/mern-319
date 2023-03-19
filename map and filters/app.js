@@ -36,9 +36,44 @@ let chaining = a.filter((x)=>{
 //             return user.firstName + " " + user.lastName;
 //     })
 // console.log(females)
-
-
 let users = []
+function renderUsers(){
+    let userContainer = document.getElementById('users');
+    userContainer.innerHTML = ''
+    users.map((user)=>{
+        let div = document.createElement('div');
+        let userName = document.createElement('p');
+        let userEmail = document.createElement('p');
+        div.classList.add('user');
+
+        userName.innerText = user.name;
+        userEmail.innerText = user.email;
+
+        userContainer.appendChild(div);
+        div.appendChild(userName);
+        div.appendChild(userEmail)
+
+    })
+}
+function successAlert(){
+    let alert = document.getElementById('alert');
+    alert.classList.add('success');
+    alert.innerText = 'User added successfully!'
+    setTimeout(()=>{
+        alert.classList.remove('success');
+        alert.innerText = ''
+    }, 2000)
+}
+function failAlert(){
+    let alert = document.getElementById('alert');
+    alert.classList.add('danger');
+    alert.innerText = 'Email already exists!'
+    setTimeout(()=>{
+        alert.classList.remove('danger');
+        alert.innerText = ''
+    }, 2000)
+}
+
 function register(){
     let name = document.getElementById('name');
     let email = document.getElementById('email');
@@ -51,11 +86,13 @@ function register(){
         return user.email == email.value;
     })
     if(userEmailCount.length == 0){
-        users.push(tempUser)
+        users.push(tempUser);
+        successAlert();
     }
     else{
-        alert("user with same email exists!")
+        failAlert()
     }
-    
-    console.log(users)
+    renderUsers();
+    name.value = ''
+    email.value = ''
 }
