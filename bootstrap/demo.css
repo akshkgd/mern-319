@@ -1,0 +1,15 @@
+
+
+/* bootstrap colors
+    primary => dodgerblue
+    secindary => gray
+    success => green
+    danger => red
+    info => lightblue
+    warning => yellow
+    light => white
+    dark => black
+*/
+.radius-1{
+    border-radius: 16px;
+}
