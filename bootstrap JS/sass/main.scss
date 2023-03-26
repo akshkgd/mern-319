@@ -1,0 +1,18 @@
+$accordion-icon-transition:transform .1s ease-in-out;
+$modal-header-border-color: white;
+$modal-content-border-color: white;
+$modal-content-border-radius:  12px;
+$modal-transition: transform .1s ease-out;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// css
+.modal-body{
+    position: relative;
+}
+.modal-btn-close{
+    position: absolute;
+    top:0;
+    right:0;
+    display: inline-block;
+    padding: 12px;
+}
