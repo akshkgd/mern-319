@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body{
+    background-color: 	#18191a;
+    font-family: 'Poppins', sans-serif;
+}
+.search-container{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 18px;
+    font-size: 17px;
+    border: 1px solid transparent;
+    background-color: 	#3a3b3c;
+    width: 600px;
+    border-radius: 12px 0 0 12px;
+    color: white;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #FFC837;
+}
+.btn{
+    padding: 18px 36px;
+    font-size: 17px;
+    border: 1px solid transparent;
+    background-color: #FFC837;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+.intro{
+    width: 600px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.intro h1{
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.highlight{
+    background: linear-gradient(90deg, #FF8008 0%, #FFC837 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.intro p{
+    font-size: 20px;
+    color: #b3b3b3;
+}
+.loader {
+    border: 2px solid #4f4f4f;
+    margin: 190px auto; /* Light grey */
+    border-top: 2px solid #cbcbcb; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 900ms linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .movie-container{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    color: white;
+  }
+  .error-container{
+    width: 800px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+  }
+  .error-container h1{
+    font-size: 46px;
+  }
+  .content{
+    width: 500px;
+  }
+  .movie-img{
+    width: 300px;
+  }
+  .movie-img-container{
+    position: relative;
+    margin-left: 20px;
+  }
+  .tag{
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    margin: 20px;
+    padding: 4px 12px;
+    border-radius: 6px;
+  }
+  .ratings{
+    background-color: #fffffff3;
+    top: 0;
+    left: 0;
+    color: black;
+  }
+  .genre{
+    background-color: #FFC837;
+    bottom: 0;
+    left: 0;
+    color: black;
+  }
+ 
+  .content p{
+    font-size: 18px;
+  }
+  .desc{
+    color: #b3b3b3;
+    font-size: 15px !important;
+    
+  }
+  #value{
+
+  }
+  .d-none{
+    display: none;
+  }
