@@ -1,0 +1,37 @@
+.cta-btn{
+    transition: .2s;
+    padding: 18px 46px;
+    border-radius: 12px;
+    color: rgb(77, 77, 77);
+    border: 1px solid rgb(188, 188, 188);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 14px;
+}
+.cta-btn:hover{
+    border: 1px solid rgb(197, 197, 197);
+    background-color: rgb(241, 241, 241);
+    color: black;
+
+}
+.add-btn{
+    transition: .2s;
+    padding: 14px 30px;
+    border-radius: 12px;
+    color: white;
+    background-color:black;
+    border: 1px solid black;
+    text-decoration: none;
+    display: inline-block;
+}
+input{
+    border-radius: 12px !important;
+}
+.user{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(255, 207, 33);
+    margin-left: -6px;
+}
