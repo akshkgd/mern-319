@@ -10,12 +10,20 @@
 </head>
 <body>
     <%-include('nav') %>
+    
     <div class="container">
         <div class="row justify-content-center mt-5">
             <div class="col-md-6  mt-5">
+              <% if(users.length == 0){%>
+
+                <h2 class="fw-bold fs-3">Start managing your users, <%= req.session.user.name%></h2>
+                <p class="mt-1 mb-3 text-muted">You can see a list of all the users on this place once you add your first user!</p>
+                <a href="/add" class="add-btn rounded-pill">Add First User</a>
+                  
+                <%}else{%>
                 <h2 class="fw-bold fs-3">All registered Users</h2>
                 <p class="mt-1 mb-3 text-muted">Add the first name & email of the user to store it in the database!</p>
-
+                  
                 <table class="table">
                     <thead>
                       <tr>
@@ -25,6 +33,7 @@
                         <th>Actions</th>
                       </tr>
                     </thead>
+                    <%}%>
                     <tbody>
                         <%for(let i=0; i<users.length; i++){%>
                       <tr>

@@ -35,3 +35,31 @@ input{
     border: 2px solid rgb(255, 207, 33);
     margin-left: -6px;
 }
+.logout-btn{
+    background-color: rgb(255, 220, 220);
+    color: rgb(177, 0, 0);
+    padding: 10px 32px;
+    border-radius:40px;
+    border: none;
+}
+.dropdown-menu{
+    border:none !important;
+    box-shadow: 4px 8px 16px 6px #eee;
+    border-radius: 12px !important;
+}
+.dropdown-item{
+    padding: 10px 10px;
+}
+.logout-dropdown-item:hover{
+    background-color: rgb(255, 224, 224) !important;
+}
+.user-profile{
+    background-color: blueviolet;
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.dropdown-toggle::before{
+    display: none !important;
+}
