@@ -94,3 +94,15 @@ input{
     border-radius: 12px;
     display: inline-block;
 }
+.goback{
+    background-color: #fff;
+    border: 4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+.goback:hover{
+    border: 4px solid rgb(227, 227, 227); 
+}

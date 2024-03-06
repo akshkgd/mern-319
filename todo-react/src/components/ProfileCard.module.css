@@ -1,0 +1,20 @@
+.card{
+    width: 320px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 10px
+  }
+  .cardImg{
+    height: 90px;
+    border-radius: 50%;
+  }
+  .btn{
+      background-color: white;
+      color: black;
+      padding: 16px 32px;
+      border: 1px solid black;
+      border-radius: 12px;
+      cursor: pointer;
+    
+  }

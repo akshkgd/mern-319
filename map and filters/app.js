@@ -36,21 +36,48 @@ let chaining = a.filter((x)=>{
 //             return user.firstName + " " + user.lastName;
 //     })
 // console.log(females)
-let users = []
+let users = [];
+let userDetails = document.getElementById('userDetails');
+let leftContainer = document.getElementById('left-container');
+let userDetailsContainer = document.getElementById('user-details-container');
+userDetails.style.display = 'none';
+
+showUserDetails = (e)=>{
+    userDetailsContainer.innerHTML = ''
+    userDetails.style.display = 'block';
+    leftContainer.style.display = 'none';
+    let email = e.target.innerText;
+    let result = users.find((user)=>{
+        return user.email == email;
+    })
+
+    let nameElement = document.createElement('p');
+    let emailElement = document.createElement('p');
+    nameElement.innerText = result.name;
+    emailElement.innerText = result.email;
+
+    userDetailsContainer.appendChild(nameElement);
+    userDetailsContainer.appendChild(emailElement)
+
+}
+goback =()=>{
+    userDetails.style.display = 'none';
+    leftContainer.style.display = 'block';
+}
+
+
 function renderUsers(){
     let userContainer = document.getElementById('users');
     userContainer.innerHTML = ''
-    users.map((user)=>{
+    users.map((user, index)=>{
         let div = document.createElement('div');
-        let userName = document.createElement('p');
         let userEmail = document.createElement('p');
         div.classList.add('user');
 
-        userName.innerText = user.name;
+        console.log(index+1, user.name)
         userEmail.innerText = user.email;
-
+        userEmail.addEventListener('click', showUserDetails)
         userContainer.appendChild(div);
-        div.appendChild(userName);
         div.appendChild(userEmail)
 
     })

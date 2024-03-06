@@ -2,6 +2,10 @@ const users = [];
 const options = { weekday: 'long', day:'numeric',  month: 'long', }
 let nameContainer = document.getElementById('nameContainer');
 
+
+showDetails = (e)=>{
+    console.log(e.target.innerText)
+}
 renderNames = ()=>{
     nameContainer.innerHTML = ''
     users.map((user)=>{
@@ -13,9 +17,10 @@ renderNames = ()=>{
         let dateToFormat = new Date(user.date);
         let fDate = dateToFormat.toLocaleDateString('en', options)
         date.innerText = fDate;
+        div.addEventListener('click', showDetails)
         nameContainer.appendChild(div);
         div.appendChild(p);
-        div.appendChild(date);
+        // div.appendChild(date);
     })
     console.log(users)
 }

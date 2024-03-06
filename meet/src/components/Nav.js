@@ -1,12 +1,12 @@
-
+import { Link } from "react-router-dom";
 function Nav(){
     return(
         <nav>
-            <a href="/" className="logo">Codekaro Meetings</a>
+            <Link to="/" className="logo">Codekaro Meetings</Link>
             <div className="links">
-            <a href="/about">Upcoming Meetings</a>
-            <a href="/contact">Past meetings</a>
-            <a href="/add-meeting" className="btn">Add Meeting</a>
+            <Link to="/upcoming-meetings">Upcoming Meetings</Link>
+            <Link to="/past-meetings">Past meetings</Link>
+            <Link to="/add-meeting" className="btn">Add Meeting</Link>
             </div>
         </nav>
         

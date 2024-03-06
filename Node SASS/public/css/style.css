@@ -1,0 +1,64 @@
+.add-btn{
+    background-color: black;
+    color: white;
+    padding: 14px 30px;
+    border:none;
+    font-size: 16px;
+    border-radius: 12px;
+}
+input{
+    border-radius: 12px !important;
+}
+.link{
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+
+}
+.card{
+    padding:20px !important;
+    
+    color: white;
+    
+}
+.package{
+    border:none;
+    border-radius: 14px !important;
+    background-color: white;
+    filter:drop-shadow(12px 12px 0 rgba(137, 43, 226, 0.41));
+}
+.silver{
+    background-color: blueviolet !important;
+}
+.gold{
+    background-color: rgb(0, 197, 0) !important;
+    filter:drop-shadow(12px 12px 0 rgba(0, 255, 34, 0.399));
+}
+.user{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.user-flex{
+    display: flex;
+    gap:14px
+}
+.table{
+    border: 1px solid lightgray;
+}
+.l2{
+    background-color: rgb(222, 255, 222) !important;
+    color: rgb(0, 78, 0) !important;
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.l1{
+    background-color: rgb(240, 222, 255) !important;
+    color: rgb(37, 0, 60) !important;
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}

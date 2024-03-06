@@ -97,3 +97,17 @@
 .d-none{
   display: none;
 }
+.btn{
+  background-color: blueviolet;
+  color: white;
+  padding: 16px 38px;
+  border-radius: 120px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+.counter{
+  font-size: 46px;
+  font-weight: bold;
+}

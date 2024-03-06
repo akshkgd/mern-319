@@ -51,7 +51,6 @@ nav{
 .logo{
   text-decoration: none;
   color: black;
-  margin-left: 12px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -64,12 +63,11 @@ nav{
   margin: 60px auto;
 }
 .title{
-  font-size: 42px;
+  font-size: 36px;
   margin: 8px 0;
 }
 .hero{
-  width: 600px;
-  margin:0 auto;
+  width: 650px;
 }
 .highlight{
   color: tomato; 
@@ -141,4 +139,35 @@ input{
 }
 .d-none{
   display: none;
+}
+.meeting-card{
+  width: 300px;
+  border-radius: 14px;
+  width: 280px;
+  box-shadow: 6px 6px 10px 6px #eee;
+}
+.meeting-card img{
+  border-radius: 14px 14px 0 0 ;
+  width: 100%;
+}
+.meeting-card-body{
+  padding: 12px;
+}
+.meeting-card-body p{
+  margin: 0;
+}
+.meeting-card-body h3{
+  margin: 0;
+  font-weight: 500;
+}
+.meetings-container{
+  flex-wrap: wrap;
+  margin-top: 20px;
+  display: flex;
+  gap: 26px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

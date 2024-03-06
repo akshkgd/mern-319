@@ -12,9 +12,9 @@
 <body>
 
     <div class="container">
-        <div class="left-container">
+        <div class="left-container" >
 
-            <div class="add">
+            <div class="add" id="left-container">
                 <h2>Add New User</h2>
                 <p>This is a simple js app to register new students. Enter the details and click register now to add the
                     data!</p>
@@ -26,6 +26,16 @@
                 <button class="btn" onclick="register()">Register Now</button>
 
                 <div id="alert"></div>
+            </div>
+
+            <div class="user-details" id="userDetails">
+                <button class="goback" onclick="goback()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                  </svg></button>
+                  <div id="user-details-container">
+                    
+                  </div>
+                  
             </div>
 
         </div>

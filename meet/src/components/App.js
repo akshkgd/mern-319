@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import AddMeetings from '../pages/AddMeeting';
 import NotFound from '../pages/NotFound';
 import UpcomingMeetings from '../pages/UpcomingMeetings';
+import PastMeetings from '../pages/PastMeetings';
 import Nav from './Nav'
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/add-meeting' element={<AddMeetings/>} />
         <Route path='/upcoming-meetings' element={<UpcomingMeetings/>} />
+        <Route path='/past-meetings' element={<PastMeetings/>} />
+
         <Route path='*' element={<NotFound/>} />
 
       </Routes>
